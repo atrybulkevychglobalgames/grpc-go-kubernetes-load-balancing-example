@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+        - image: dvcdsys/examples:grpcbalancing
+          name: client
+          command: [ "/app/bin/client" ]
+          args: ["dns:///server-sa:7777"]
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 7777
+#      imagePullSecrets:
+#        - name: regcred

@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  server:
+    image: dvcdsys/trade-system:removetestinf
+    command: "/app/bin/server"
+    ports:
+      - 7777:7777

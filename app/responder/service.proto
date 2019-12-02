@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package responder;
+
+service ResponderService {
+    rpc GetName (GetNameRequest) returns (GetNameResponse) {}
+}
+
+message GetNameRequest {
+    string Value = 1;
+}
+
+message GetNameResponse {
+    string Name = 1;
+    string Value = 2;
+}
