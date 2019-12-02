@@ -9,7 +9,7 @@
 # kubectl apply -f ./server-deployment.yml
 # kubectl apply -f ./server-service.yml 
 # kubectl apply -f ./client-deployment.yml
-# k logs -f `k get po --no-headers -o custom-columns=":metadata.name" | grep client`
+# kubectl logs -f `k get po --no-headers -o custom-columns=":metadata.name" | grep client`
 ```
 Output example
 ```bash
