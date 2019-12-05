@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	"github.com/dvcdsys/newinfragrpc/app/responder"
+	"github.com/atrybulkevychglobalgames/grpc-go-kubernetes-load-balancing-example/app/responder"
 	"os"
 )
 

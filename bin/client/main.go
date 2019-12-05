@@ -3,7 +3,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/dvcdsys/newinfragrpc/app/responder"
+    "github.com/atrybulkevychglobalgames/grpc-go-kubernetes-load-balancing-example/app/responder"
     "google.golang.org/grpc"
     "google.golang.org/grpc/balancer/roundrobin"
     "log"

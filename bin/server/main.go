@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/dvcdsys/newinfragrpc/app/responder"
-	service2 "github.com/dvcdsys/newinfragrpc/app/service"
+	"github.com/atrybulkevychglobalgames/grpc-go-kubernetes-load-balancing-example/app/responder"
+	service2 "github.com/atrybulkevychglobalgames/grpc-go-kubernetes-load-balancing-example/app/service"
 	"github.com/google/uuid"
 	"google.golang.org/grpc"
 	"log"
